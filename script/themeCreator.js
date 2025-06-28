@@ -9,32 +9,27 @@ function generateTemplate() {
     body { font-family: Arial; }
   ]]></b:skin>
 
-  <b:template-skin>default</b:template-skin>
+  <b:template-skin>
+    <b:section id="main">
+      <b:widget id="Blog1" type="Blog" />
+    </b:section>
 
-  <!-- 💡 Optional: Add header or meta data here -->
+    <!-- About Us Section -->
+    <b:section id='aboutus' class='about-section' showaddelement='no'>
+      <b:widget id='About1' type='Text' version='2'>
+        <b:widget-settings>
+          <b:setting name='title'>About Elimuhub</b:setting>
+          <b:setting name='content'>
+            <![CDATA[
+              <p>Elimuhub Education Consultants is a Nairobi-based private tuition center offering personalized tutoring, homeschooling, and academic consulting across Kenya. We specialize in IGCSE, IB, American, British, CBC, KCSE, and adult education.</p>
+            ]]>
+          </b:setting>
+        </b:widget-settings>
+        <b:includable id='main'><div class='widget-content'><data:content/></div></b:includable>
+      </b:widget>
+    </b:section>
 
-  <!-- 🔻 About Us Section -->
-  <b:section id='aboutus' class='about-section' showaddelement='no'>
-    <b:widget id='About1' type='Text' version='2'>
-      <b:widget-settings>
-        <b:setting name='title'>About Elimuhub</b:setting>
-        <b:setting name='content'>
-          <![CDATA[
-            <p>Elimuhub Education Consultants is a Nairobi-based private tuition center offering personalized tutoring, homeschooling, and academic consulting across Kenya. We specialize in IGCSE, IB, American, British, CBC, KCSE, and adult education.</p>
-          ]]>
-        </b:setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-        <div class='widget-content'><data:content/></div>
-      </b:includable>
-    </b:widget>
-  </b:section>
-
-  <!-- 🔻 Blog Section -->
-  <b:section id="main">
-    <b:widget id="Blog1" type="Blog" />
-  </b:section>
-
+  </b:template-skin>
 </b:template>`;
 
   document.getElementById("output").value = xml;
