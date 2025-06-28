@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elimuhub Blogger Template Creator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Blogger Template Creator</h1>
+    <p>Create Your Blogger XML Template</p>
+  </header>
+
+  <main class="container">
+    <form id="creatorForm">
+      <input type="text" id="templateName" placeholder="Template Name"><br>
+      <input type="text" id="templateURL" placeholder="Template URL"><br>
+      <input type="text" id="author" placeholder="Author"><br>
+      <button type="button" onclick="generateTemplate()">Create Template Code</button>
+    </form>
+
+    <h2>Generated XML</h2>
+    <textarea id="output" rows="20" cols="60" readonly></textarea>
+  </main>
+
+  <footer>
+    <p>© 2025 Elimuhub</p>
+  </footer>
+
+  <script src="script/themeCreator.js"></script>
+</body>
+</html>
