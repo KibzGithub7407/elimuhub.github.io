@@ -1,4 +1,3 @@
-
 # ✨ Elimuhub Blogger Template Creator
 
 Welcome to the **Elimuhub Blogger Template Creator** — a simple online tool that allows you to generate custom Blogger XML templates for your website without coding.
