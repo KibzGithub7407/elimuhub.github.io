@@ -9,56 +9,6 @@ function generateTemplate() {
     body { font-family: Arial; }
   ]]></b:skin>
 
-  <b:template-skin>default</b:template-skin>
-
-  <!-- ✅ About Us Section -->
-  <b:section id='aboutus' class='about-section' showaddelement='no'>
-    <b:widget id='About1' type='Text' version='2'>
-      <b:widget-settings>
-        <b:setting name='title'>About Elimuhub</b:setting>
-        <b:setting name='content'>
-          <![CDATA[
-            <p>Elimuhub Education Consultants is a Nairobi-based private tuition center offering personalized tutoring, homeschooling, and academic consulting across Kenya. We specialize in IGCSE, IB, American, British, CBC, KCSE, and adult education.</p>
-          ]]>
-        </b:setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-        <div class='widget-content'><data:content/></div>
-      </b:includable>
-    </b:widget>
-  </b:section>
-
-  <!-- ✅ Services Section -->
-  <b:section id='services' class='services-section' showaddelement='no'>
-    <b:widget id='Services1' type='Text' version='2'>
-      <b:widget-settings>
-        <b:setting name='title'>Our Services</b:setting>
-        <b:setting name='content'>
-          <![CDATA[
-            <ul>
-              <li><strong>Tuition & Homeschooling:</strong> Personalized one-on-one lessons across all subjects and curriculums.</li>
-              <li><strong>Study Abroad:</strong> Guidance and placement support for international schools and universities.</li>
-              <li><strong>School Placement:</strong> Help with enrolling in local and international schools.</li>
-              <li><strong>Special Needs Education:</strong> Learning support for learners with diverse needs.</li>
-              <li><strong>Muslim Schools Placement:</strong> Assistance in finding suitable Islamic academic institutions.</li>
-            </ul>
-          ]]>
-        </b:setting>
-      </b:widget-settings>
-      <b:includable id='main'>
-        <div class='widget-content'><data:content/></div>
-      </b:includable>
-    </b:widget>
-  </b:section>
-
-  <!-- ✅ Blog Section -->
-  <b:section id="main">
-    <b:widget id="Blog1" type="Blog" />
-  </b:section>
-</b:template>`;
-
-  document.getElementById("output").value = xml;
-}
   <b:template-skin>
     <b:section id="main">
       <b:widget id="Blog1" type="Blog" />
@@ -72,6 +22,27 @@ function generateTemplate() {
           <b:setting name='content'>
             <![CDATA[
               <p>Elimuhub Education Consultants is a Nairobi-based private tuition center offering personalized tutoring, homeschooling, and academic consulting across Kenya. We specialize in IGCSE, IB, American, British, CBC, KCSE, and adult education.</p>
+            ]]>
+          </b:setting>
+        </b:widget-settings>
+        <b:includable id='main'><div class='widget-content'><data:content/></div></b:includable>
+      </b:widget>
+    </b:section>
+
+    <!-- Services Section -->
+    <b:section id='services' class='services-section' showaddelement='no'>
+      <b:widget id='Services1' type='Text' version='2'>
+        <b:widget-settings>
+          <b:setting name='title'>Our Services</b:setting>
+          <b:setting name='content'>
+            <![CDATA[
+              <ul>
+                <li><strong>Tuition & Homeschooling:</strong> Personalized in-home tutoring across Nairobi.</li>
+                <li><strong>Study Abroad:</strong> Guidance on international universities, scholarships, and visa support.</li>
+                <li><strong>School Placement:</strong> Support finding suitable schools (local & international).</li>
+                <li><strong>Special Education:</strong> Tutors trained in supporting learners with disabilities.</li>
+                <li><strong>Muslim School Placement:</strong> We place learners in faith-friendly academic environments.</li>
+              </ul>
             ]]>
           </b:setting>
         </b:widget-settings>
